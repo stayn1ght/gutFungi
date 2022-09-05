@@ -1,0 +1,271 @@
+{
+    "name": "Gut Fungi",
+    "children": [
+        {
+            "name": "元信息",
+            "data": {
+                "id": "cml20ixzz2w0",
+                "created": 1662034374336,
+                "layout": null
+            },
+            "children": [
+                {
+                    "name": "sample to run info",
+                    "data": {
+                        "id": "cml2182o9140",
+                        "created": 1662034429038,
+                        "layout": null,
+                        "expandState": "expand"
+                    },
+                    "children": [
+                        {
+                            "name": "samples loaded",
+                            "data": {
+                                "id": "cml25i6czso0",
+                                "created": 1662034764485,
+                                "expandState": "expand",
+                                "layout": null,
+                                "priority": 1
+                            },
+                            "children": []
+                        },
+                        {
+                            "name": "CURATED sample to run",
+                            "data": {
+                                "id": "cmlpa0nx0rc0",
+                                "created": 1662100003714,
+                                "layout": null,
+                                "priority": 1
+                            },
+                            "children": []
+                        },
+                        {
+                            "name": "CURATED lefse analysis group to samples",
+                            "data": {
+                                "id": "cmlpbwzn4mg0",
+                                "created": 1662100152444,
+                                "layout": null,
+                                "priority": 1
+                            },
+                            "children": []
+                        },
+                        {
+                            "name": "project to run id to phenotype",
+                            "data": {
+                                "id": "cmlutkakgww0",
+                                "created": 1662115640911,
+                                "layout": null,
+                                "priority": 1
+                            },
+                            "children": []
+                        },
+                        {
+                            "name": "stats by phenotype",
+                            "data": {
+                                "id": "cmlp47pdxtk0",
+                                "created": 1662099548855,
+                                "layout": null,
+                                "expandState": "expand",
+                                "priority": 2
+                            },
+                            "children": []
+                        },
+                        {
+                            "name": "stats by pehnotype and project",
+                            "data": {
+                                "id": "cmlp4r67ark0",
+                                "created": 1662099591231,
+                                "layout": null,
+                                "expandState": "expand",
+                                "priority": 2
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "projects",
+                    "data": {
+                        "id": "cml210y62c80",
+                        "created": 1662034413528,
+                        "layout": null
+                    },
+                    "children": [
+                        {
+                            "name": "projects summary",
+                            "data": {
+                                "id": "cmlv250m9go0",
+                                "created": 1662116312935,
+                                "layout": null,
+                                "priority": 2
+                            },
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "序列",
+            "data": {
+                "id": "cml20c7p87k0",
+                "created": 1662034359685,
+                "layout": null,
+                "expandState": "expand"
+            },
+            "children": [
+                {
+                    "name": "species abundance",
+                    "data": {
+                        "id": "cml25641lm00",
+                        "created": 1662034738224,
+                        "expandState": "expand",
+                        "layout": null
+                    },
+                    "children": [
+                        {
+                            "name": "species abundance summary",
+                            "data": {
+                                "id": "cmllbpw2s680",
+                                "created": 1662088852551,
+                                "layout": null,
+                                "progress": 1,
+                                "priority": 1,
+                                "expandState": "expand"
+                            },
+                            "children": [
+                                {
+                                    "name": "species abundance stats density",
+                                    "data": {
+                                        "id": "cmlu2lm1ndc0",
+                                        "created": 1662113527949,
+                                        "layout": null,
+                                        "progress": 1
+                                    },
+                                    "children": []
+                                },
+                                {
+                                    "name": "species abundance summary selected by phenotype",
+                                    "data": {
+                                        "id": "cmluk0ix3hs0",
+                                        "created": 1662114892603,
+                                        "layout": null
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "species cooccurrence",
+                            "data": {
+                                "id": "cml263gonhs0",
+                                "created": 1662034810822,
+                                "layout": null,
+                                "expandState": "expand",
+                                "priority": 2,
+                                "progress": null
+                            },
+                            "children": [
+                                {
+                                    "name": "species cooccurrence selected summary",
+                                    "data": {
+                                        "id": "cmllg1tbqp40",
+                                        "created": 1662089191963,
+                                        "progress": 1,
+                                        "resource": [
+                                            "species selected？"
+                                        ],
+                                        "layout": null
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CURATED taxon abundance",
+                            "data": {
+                                "id": "cml25bqpsio0",
+                                "created": 1662034750479,
+                                "expandState": "expand",
+                                "layout": null,
+                                "priority": 2
+                            },
+                            "children": [
+                                {
+                                    "name": "CURATED lefse analysis results",
+                                    "data": {
+                                        "id": "cmll3l6321s0",
+                                        "created": 1662088215359,
+                                        "layout": null,
+                                        "expandState": "expand"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "lefse analysis results summary",
+                                            "data": {
+                                                "id": "cmlp9e5fjfk0",
+                                                "created": 1662099954707,
+                                                "layout": null
+                                            },
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "CURATED lefse project experiment type",
+                                            "data": {
+                                                "id": "cmluyrncnc00",
+                                                "created": 1662116048742,
+                                                "layout": null
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "搜索功能",
+            "data": {
+                "id": "cmlunud177k0",
+                "created": 1662115192643,
+                "expandState": "expand",
+                "layout": null
+            },
+            "children": [
+                {
+                    "name": "searchable",
+                    "data": {
+                        "id": "cmlum8a8zs80",
+                        "created": 1662115066221,
+                        "progress": 1,
+                        "layout": null
+                    },
+                    "children": []
+                },
+                {
+                    "name": "data selector projects",
+                    "data": {
+                        "id": "cmlunytqra80",
+                        "created": 1662115202360,
+                        "layout": null
+                    },
+                    "children": []
+                },
+                {
+                    "name": "data selector runs",
+                    "data": {
+                        "id": "cmluo261dkg0",
+                        "created": 1662115209634,
+                        "layout": null
+                    },
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
+        
+   
