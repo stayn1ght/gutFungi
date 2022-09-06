@@ -3,71 +3,31 @@
     "children": [
         {
             "name": "元信息",
-            "data": {
-                "id": "cml20ixzz2w0",
-                "created": 1662034374336,
-                "layout": null
-            },
+            "value": 114514,
             "children": [
                 {
                     "name": "sample to run info",
-                    "data": {
-                        "id": "cml2182o9140",
-                        "created": 1662034429038,
-                        "layout": null,
-                        "expandState": "expand"
-                    },
+                    "value":114514,
                     "children": [
                         {
                             "name": "samples loaded",
-                            "data": {
-                                "id": "cml25i6czso0",
-                                "created": 1662034764485,
-                                "expandState": "expand",
-                                "layout": null,
-                                "priority": 1
-                            },
+                            "value": 114514,
                             "children": []
                         },
                         {
                             "name": "CURATED sample to run",
-                            "data": {
-                                "id": "cmlpa0nx0rc0",
-                                "created": 1662100003714,
-                                "layout": null,
-                                "priority": 1
-                            },
                             "children": []
                         },
                         {
                             "name": "CURATED lefse analysis group to samples",
-                            "data": {
-                                "id": "cmlpbwzn4mg0",
-                                "created": 1662100152444,
-                                "layout": null,
-                                "priority": 1
-                            },
                             "children": []
                         },
                         {
                             "name": "project to run id to phenotype",
-                            "data": {
-                                "id": "cmlutkakgww0",
-                                "created": 1662115640911,
-                                "layout": null,
-                                "priority": 1
-                            },
                             "children": []
                         },
                         {
                             "name": "stats by phenotype",
-                            "data": {
-                                "id": "cmlp47pdxtk0",
-                                "created": 1662099548855,
-                                "layout": null,
-                                "expandState": "expand",
-                                "priority": 2
-                            },
                             "children": []
                         },
                         {

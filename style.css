@@ -1,9 +1,10 @@
-div {
-    width: 1000px;
-    height: 1000px;
-    background-color: green;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    font-size: 10px;
+#main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }

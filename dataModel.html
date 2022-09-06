@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 引入echarts文件 -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+    <script src="../前端/echarts_try/echarts-5.3.3/dist/echarts.js"></script>
     <link rel="stylesheet" href="./style.css">
     <!-- 引入jQuery -->
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -14,71 +14,92 @@
 </head>
 
 <body>
-    <div id="main">
-        <script>
-            // import * as echarts from 'echarts';
-            var ROOT_PATH = 'https://echarts.apache.org/examples';
-            var chartDom = document.getElementById('main');
-            var myChart = echarts.init(chartDom);
-            var option;
+    <div id="main"></div>
+    <script type="text/javascript">
+        // import * as echarts from 'echarts';
+        // 基于准备好的dom，初始化echarts实例
+        var dom = document.getElementById('main');
+        var myChart = echarts.init(dom, null, {
+            renderer: 'canvas',
+            useDirtyRect: false
+        });
+        var app = {};
 
-            
-            /* 使用jQuery获取本地文件出现跨域问题，对浏览器进行设置 属性 - 目标 - 添加 --allow-file-access-from-files
-            这项设置可能带来安全性问题 */
-            myChart.showLoading();
-            $.get('Gut_Fungi.json', function (data) {
-            myChart.hideLoading();
-            /* data.children.forEach(function (datum, index) {
-                index % 2 === 0 && (datum.collapsed = true);
-            }); */
-            myChart.setOption(
-                (option = {
-                // tooltip属性是提示框浮层组件，用于提示和数据鼠标悬浮交互时的信息提示。
+        var option;
+
+        myChart.showLoading();
+        /* 读取本地数据
+        使用jQuery获取本地文件出现跨域问题，对浏览器进行设置 属性 - 目标 - 添加 --allow-file-access-from-files
+        这项设置可能带来安全性问题 */
+        var data = $.ajax({
+            url: './Gut_Fungi.json',
+            type: 'get',
+            dataType: 'json',
+            async: false,
+            success: function (data) {
+                return data;
+            }
+        }).responseJSON;
+   
+        myChart.hideLoading();
+        myChart.setOption(
+            (option = {
                 tooltip: {
-                    // 设置触发类型
                     trigger: 'item',
-                    // 设置提示框触发条件
-                    triggerOn: 'click'
+                    triggerOn: 'mousemove'
+                },
+                legend: {
+                    top: '2%',
+                    left: '3%',
+                    orient: 'vertical',
+                    data: [
+                        {
+                            name: 'tree1',
+                            icon: 'rectangle'
+                        }
+                    ],
+                    borderColor: '#c23531'
                 },
                 series: [
                     {
-                    type: 'tree',
-                    data: [data],
-                    top: '1%',
-                    left: '7%',
-                    bottom: '1%',
-                    right: '20%',
-                    symbolSize: 7,
-                    label: {
-                        position: 'left',
-                        verticalAlign: 'middle',
-                        align: 'right',
-                        fontSize: 9
-                    },
-                    leaves: {
+                        type: 'tree',
+                        name: 'tree1',
+                        data: [data],
+                        top: '5%',
+                        left: '7%',
+                        bottom: '2%',
+                        right: '60%',
+                        symbolSize: 7,
                         label: {
-                        position: 'right',
-                        verticalAlign: 'middle',
-                        align: 'left'
-                        }
-                    },
-                    emphasis: {
-                        focus: 'descendant'
-                    },
-                    expandAndCollapse: true,
-                    animationDuration: 550,
-                    animationDurationUpdate: 750
+                            position: 'left',
+                            verticalAlign: 'middle',
+                            align: 'right'
+                        },
+                        leaves: {
+                            label: {
+                                position: 'right',
+                                verticalAlign: 'middle',
+                                align: 'left'
+                            }
+                        },
+                        emphasis: {
+                            focus: 'descendant'
+                        },
+                        expandAndCollapse: true,
+                        animationDuration: 550,
+                        animationDurationUpdate: 750
                     }
                 ]
-                })
-            );
-            });
-            myChart.on('click', function (params) {
-                console.log(params);
-            });
-            option && myChart.setOption(option);
-        </script>
-    </div>
+            })
+        );
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+        window.addEventListener('resize', myChart.resize);
+    </script>
+
 </body>
 
 </html>
