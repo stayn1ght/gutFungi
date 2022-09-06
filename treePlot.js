@@ -73,7 +73,7 @@ myChart.setOption(
                 emphasis: {
                     focus: 'descendant'
                 },
-                inintialTreeDepth: 3,
+                inintialTreeDepth: 4,
                 expandAndCollapse: true,
                 animationDuration: 550,
                 animationDurationUpdate: 750
