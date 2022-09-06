@@ -56,8 +56,8 @@ myChart.setOption(
                 left: '20%',
                 bottom: '10%',
                 right: '20%',
-                fontSize: 15,
-                symbolSize: 7,
+                fontSize: 17,
+                symbolSize: 8,
                 label: {
                     position: 'left',
                     verticalAlign: 'middle',
