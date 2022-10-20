@@ -7,14 +7,16 @@ var myChart = echarts.init(dom, null, {
 });
 var app = {};
 
+
 var option;
 
 myChart.showLoading();
-/* 读取本地数据
-使用jQuery获取本地文件出现跨域问题，对浏览器进行设置 属性 - 目标 - 添加 --allow-file-access-from-files
-这项设置可能带来安全性问题 */
 
 var data = $.ajax({
+    // 设置响应头，实现跨域
+    headers: {
+        'Access-Control-Allow-Origin': '*'
+    },
     url: './Gut_Fungi.json',
     type: 'get',
     dataType: 'json',
